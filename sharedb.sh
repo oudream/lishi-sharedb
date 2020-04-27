@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 # build:clean
 npm run build:clean
 
@@ -11,6 +12,14 @@ npm run build
 
 # dev
 npm run dev
+
+
+electron ./dist/electron/main.js
+
+
+# unzip
+npm install -g asar
+asar extract app.asar
 
 
 ### debug debug debug
