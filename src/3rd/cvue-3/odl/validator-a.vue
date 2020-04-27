@@ -1,5 +1,5 @@
 <template>
-    <el-row class="login-bg">
+    <el-row class="login-bg" :style="{ 'background': backGroundImage }">
         <el-form :model="editForm" label-width="80px" :rules="editFormRules" ref="editForm"
                  class="demo-ruleForm login-container">
 
@@ -218,7 +218,6 @@
 <style lang="scss" scoped>
     .login-bg {
         /*background: url({{backGroundImage}});*/
-        background: url(./static/jpg/login-bg.jpg);
         background-size: 100%, 100%;
         width: 100%;
         height: 100%;

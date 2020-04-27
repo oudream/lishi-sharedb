@@ -2,7 +2,7 @@
     <validator-a odc-name="user"
                  :cancel-button="{title:'取消提交', visible: true, }"
                  :submit-button="{title:'提交登录', visible: true, }"
-                 back-ground-image="./static/jpg/login-bg.jpg"
+                 :back-ground-image="bg"
                  @submit="handleValidatorSubmit"></validator-a>
 </template>
 
@@ -15,7 +15,9 @@
         props: {},
 
         data() {
-            return {}
+            return {
+                bg: require('path').join(__static, "jpg/login-bg.jpg")
+            }
         },
 
         methods: {
