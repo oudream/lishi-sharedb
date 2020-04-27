@@ -49,7 +49,7 @@ app.on('ready', () => {
     let focusWin = BrowserWindow.getFocusedWindow()
     focusWin && focusWin.toggleDevTools()
   })
-}
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
