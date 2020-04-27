@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# build:clean
+npm run build:clean
+
+# pack
+npm run pack
+
+# build
+npm run build
+
+# dev
+npm run dev
+
 
 ### debug debug debug
 # https://nodejs.org/en/docs/guides/debugging-getting-started/
@@ -33,11 +45,6 @@ npm i # or yarn # or npm install
 npm run build:windows
 npm run build:linux
 npm run build:mac
-
-
-
-
-
 
 
 
