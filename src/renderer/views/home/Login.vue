@@ -2,7 +2,7 @@
     <validator-a odc-name="user"
                  :cancel-button="{title:'取消提交', visible: true, }"
                  :submit-button="{title:'提交登录', visible: true, }"
-                 back-ground-image="/static/jpg/login-bg.jpg"
+                 back-ground-image='url("./static/jpg/login-bg.jpg")'
                  @submit="handleValidatorSubmit"></validator-a>
 </template>
 
